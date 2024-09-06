@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Échanger Maintenant</h1>
+            <h1>Vendre son compte</h1>
         </header>
         <main>
             <form action="#" method="post" class="exchange-form">
@@ -67,8 +67,16 @@
                     <label for="recipient_pseudo">Pseudo du Destinataire</label>
                     <input type="text" id="recipient_pseudo" name="recipient_pseudo" required>
                 </div>
-                <button type="submit" class="submit-btn">Soumettre</button>
-                <p class="info-text">Une fois vos données envoyées, notre équipe est chargée de vérifier le bon fonctionnement de votre login/mot de passe. Si ces informations ne permettent pas la connexion au compte, l'échange sera annulé.</p>
+                <div class="form-group">
+                    <label for="recipient_pseudo">RIB du vendeur</label>
+                    <input type="text" id="recipient_pseudo" name="recipient_pseudo" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipient_pseudo">Prix de vente</label>
+                    <input type="text" id="recipient_pseudo" name="recipient_pseudo" required>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer la demmande de vente</button>
+                <p class="info-text">Une fois la demande envoyée, l'acheteur dispose de 24h pour procéder au paiement, sinon la vente s'annule.</p>
             </form>
         </main>
     </div>
